@@ -23,7 +23,7 @@ public class Bomb : MonoBehaviour {
 			Destroy(col.gameObject);
 			if (gameObject.GetComponentInParent<SceneController>())
 			{
-				gameObject.GetComponentInParent<SceneController>().restart.SetActive(true);
+				gameObject.GetComponentInParent<SceneController>().PluhAction();
 			}
 		}
 

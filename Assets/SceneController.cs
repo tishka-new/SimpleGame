@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour {
 
 	public GameObject restart;
+	
+	public AudioSource pluh;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,5 +21,11 @@ public class SceneController : MonoBehaviour {
 	public void RestartScene()
 	{
 		SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+	}
+
+	public void PluhAction()
+	{
+		restart.SetActive(true);
+		pluh.Play();
 	}
 }

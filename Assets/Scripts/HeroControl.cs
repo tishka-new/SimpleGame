@@ -6,10 +6,8 @@ public class HeroControl : MonoBehaviour {
 
 	public GameObject bulletPrefab = null;
 	public GameObject screen = null;
-	
 	private float delta = 0.15f;
 	public Vector4 limits = new Vector4(-8, 8, -4.3f, 4.3f);
-
 	enum MoveDirectionX 
 	{
 		Left,
@@ -43,6 +41,7 @@ public class HeroControl : MonoBehaviour {
 		{
 			GameObject bullet = Instantiate(bulletPrefab, position, Quaternion.identity);
 			bullet.transform.parent = screen.transform;
+
 		}
 		if (Input.GetKeyDown(KeyCode.DownArrow))
 			directionY = MoveDirectionY.Down;
