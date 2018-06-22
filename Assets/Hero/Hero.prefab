@@ -78,6 +78,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8786093e4db9b40479e29ab52764d78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1517331375158174, guid: 00575e414509f4d45857ab1482510d9c,
+    type: 2}
+  screen: {fileID: 0}
   limits: {x: -8, y: 8, z: -4.3, w: 4.3}
 --- !u!212 &212226921032924784
 SpriteRenderer:
