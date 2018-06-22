@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: 1
+  restartButton: {fileID: 0}
 --- !u!212 &212280816644893148
 SpriteRenderer:
   m_ObjectHideFlags: 1
